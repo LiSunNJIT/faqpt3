@@ -85,6 +85,8 @@
                 </div>
 
                 <div class="links">
+
+                    <h1> This is My Welcome Page, My Mini Project3</h1>
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
