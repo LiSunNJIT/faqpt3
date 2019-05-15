@@ -7,6 +7,10 @@
                 <div class="card">
                     <div class="card-header">Questions
 
+                        <a class="btn btn-primary float-right" href="{{route('questions.create')}}">
+                            Create a Question.
+                        </a>
+
                         <div class="card-body">
 
                             <div class="card-deck">
@@ -26,7 +30,7 @@
                                             <div class="card-footer">
                                                 <p class="card-text">
 
-                                                    <a class="btn btn-primary float-right" href="#">
+                                                    <a class="btn btn-primary float-right" href="{{ route('questions.show', ['id' => $question->id]) }}">
                                                         View
                                                     </a>
                                                 </p>
@@ -34,7 +38,9 @@
                                         </div>
                                     </div>
                                 @empty
+
                                     There are no questions to view, you can create a question.
+                                    </a>
                                 @endforelse
 
                             </div>
